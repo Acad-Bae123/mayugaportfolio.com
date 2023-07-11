@@ -2,10 +2,11 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('bx bx-menu');
     menuIcon.classList.toggle('bx bx-x');
     navbar.classList.toggle('active');
-};
+});
 
 
 /* Scroll section active link*/
@@ -62,3 +63,4 @@ const typed = new Typed('.multiple-text', {
     backDelay:1000,
     loop:true
 });
+
